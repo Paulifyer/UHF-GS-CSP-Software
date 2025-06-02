@@ -79,10 +79,10 @@ def configure(ctx):
     ctx.options.enable_promisc = True
     ctx.options.enable_if_kiss = True
     ctx.options.enable_if_can = True
-    ctx.options.enable_if_zmqhub = True
+    ctx.options.enable_if_zmqhub = False #External Library ZMQ disabled
     ctx.options.disable_stlib = True
     ctx.options.with_rtable = 'cidr'
-    ctx.options.enable_can_socketcan = True
+    ctx.options.enable_can_socketcan = False #Libsocketcan is a Linux only library, does not seem to be used -> disabled
     ctx.options.with_driver_usart = 'linux'
     ctx.options.with_router_queue_length = 100
     ctx.options.with_conn_queue_length = 100

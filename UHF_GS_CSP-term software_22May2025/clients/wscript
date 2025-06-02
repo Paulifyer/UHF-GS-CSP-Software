@@ -2,7 +2,6 @@
 # encoding: utf-8
 
 import os
-import string
 
 def options(ctx):
 
@@ -15,7 +14,7 @@ def options(ctx):
 def configure(ctx):
 
 	if ctx.options.with_clients and len(ctx.options.with_clients):
-		ctx.env.CLIENT_MODULES = map(string.strip, ctx.options.with_clients.split(','))
+		ctx.env.CLIENT_MODULES = map(str.strip, ctx.options.with_clients.split(','))
 	else:
 		global all_modules
 		ctx.env.CLIENT_MODULES = all_modules

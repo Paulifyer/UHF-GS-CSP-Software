@@ -5,7 +5,7 @@
 
 #define ENABLE_FTP_FILE_BACKEND 1
 #define ENABLE_FTP_CLIENT 1
-#define HAVE_GLOB_H 1
+/* #undef HAVE_GLOB_H */
 #define LIBFTP_VERSION "2.0"
 
 #endif /* W_INCLUDE_CONF_FTP_H_WAF */
